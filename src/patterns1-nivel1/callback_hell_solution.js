@@ -1,12 +1,8 @@
-const { readdir, readFile, writeFile, read } = require("fs");
+const { readdir, readFile, writeFile, read } = require("fs/promises");
 const { join } = require("path");
-const util = require("util");
 const inbox = join(__dirname, "inbox");
 const outbox = join(__dirname, "outbox");
 
-const readdirProm = util.promisify(readdir);
-const readFileProm = util.promisify(readFile);
-const writeFileProm = util.promisify(writeFile);
 
 const reverseText = (str) => str.split("").reverse().join("");
 
@@ -22,13 +18,13 @@ async function handleError(promise, errorMessage) {
 
 (async function () {
   const files = await handleError(
-    readdirProm(inbox),
+    readdir(inbox),
     "Error: Folder inaccessible"
   );
   for (const file of files) {
-    const rFile = await handleError(readFileProm(join(inbox, file), "utf-8"),"Error: File error");
+    const rFile = await handleError(readFile(join(inbox, file), "utf-8"),"Error: File error");
     const wFile = await handleError(
-      writeFileProm(join(outbox, file), reverseText(rFile)),"Error: File could not be saved!")
+      writeFile(join(outbox, file), reverseText(rFile)),"Error: File could not be saved!")
     console.log(`${file} was successfully saved in the outbox!`)
   }
 })();
