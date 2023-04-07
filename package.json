@@ -4,7 +4,7 @@
   "description": "Aprender a utilizar implementaciones de patrones de diseño",
   "main": "index.js",
   "scripts": {
-    "n1ex1": "ts-node ./patterns1-nivel1/callbackHell.ts", 
+    "n1ex1": "ts-node ./src/patterns1-nivel1/callbackHellSolution.ts", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
