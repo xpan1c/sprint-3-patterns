@@ -1,9 +1,9 @@
 import { MiddlewareStack } from "./Middleware";
 import { Calculator } from "./Calculator";
 import * as fs from "fs";
+import * as path from "path";
 
-const path = "params.json"
-const operationParams = JSON.parse(fs.readFileSync(path, "utf8"));
+const operationParams = JSON.parse(fs.readFileSync(path.resolve(__dirname, "params.json"), "utf8"));
 
 const middlewareStack = new MiddlewareStack<typeof operationParams>();
 
