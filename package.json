@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "n1ex1": "ts-node ./src/patterns1-nivel1/callbackHellSolution.ts",
-    "n1ex2": "ts-node ./src/patterns1-nivel2/TsSolution/app.ts",
+    "n1ex2": "ts-node ./src/patterns1-nivel2/app.ts",
     "n1ex3": "ts-node ./src/patterns1-nivel3/app.ts",
     "n2ex1": "ts-node ./src/patterns2-nivel1/app.ts",
     "n2ex2": "ts-node ./src/patterns2-nivel2/app.ts",
