@@ -10,6 +10,5 @@ class Player {
         this.points += points;
     }
 }
-console.log(module.exports);
 
 module.exports = Player;

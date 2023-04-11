@@ -4,23 +4,29 @@
   "description": "Aprender a utilizar implementaciones de patrones de diseño",
   "main": "index.js",
   "scripts": {
-    "n1ex1": "ts-node ./src/patterns1-nivel1/callbackHellSolution.ts", 
+    "n1ex1": "ts-node ./src/patterns1-nivel1/callbackHellSolution.ts",
+    "n1ex2": "ts-node ./src/patterns1-nivel2/TsSolution/app.ts",
+    "n2ex1": "ts-node ./src/patterns2-nivel1/app.ts",
+    "n2ex2": "ts-node ./src/patterns2-nivel2/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xpan1c/sprint-3-patterns.git"
   },
-  "keywords": ["callbackHell","singleton"],
+  "keywords": [
+    "callbackHell",
+    "singleton"
+  ],
   "author": "Danny Mejia Valdez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/xpan1c/sprint-3-patterns/issues"
   },
   "homepage": "https://github.com/xpan1c/sprint-3-patterns#readme",
-  "devDependencies": {
+  "dependencies": {
     "@types/node": "^18.15.11",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.3"
+    "typescript": "^5.0.4"
   }
 }
