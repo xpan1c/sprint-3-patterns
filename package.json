@@ -4,11 +4,11 @@
   "description": "Aprender a utilizar implementaciones de patrones de diseño",
   "main": "index.js",
   "scripts": {
-    "n1ex1": "ts-node ./src/patterns1-nivel1/callbackHellSolution.ts",
-    "n1ex2": "ts-node ./src/patterns1-nivel2/app.ts",
-    "n1ex3": "ts-node ./src/patterns1-nivel3/app.ts",
-    "n2ex1": "ts-node ./src/patterns2-nivel1/app.ts",
-    "n2ex2": "ts-node ./src/patterns2-nivel2/app.ts",
+    "e1n1": "ts-node ./src/patterns1-nivel1/callbackHellSolution.ts",
+    "e1n2": "ts-node ./src/patterns1-nivel2/app.ts",
+    "e1n3": "ts-node ./src/patterns1-nivel3/app.ts",
+    "e2n1": "ts-node ./src/patterns2-nivel1/app.ts",
+    "e2n2": "ts-node ./src/patterns2-nivel2/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
