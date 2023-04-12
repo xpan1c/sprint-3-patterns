@@ -2,6 +2,7 @@ import Article from "./models/Article";
 import { BaseCurrency } from "./models/BaseCurrency";
 import { CurrencyToEuros } from "./decorators/CurrencyToEuros";
 import { Discount } from "./decorators/Discount";
+import { ArticleDecorator } from "./decorators/ArticlesDecorator";
 
 const baseCurrency = new BaseCurrency();
 const eurosConverter = new CurrencyToEuros(baseCurrency);
@@ -14,6 +15,11 @@ const articles: Article[] = [
   new Article("Article 4", 120, "GBP"),
 ];
 
+const total = new ArticleDecorator(discountEurosConverter,articles)
+
+total.totalCost()
+
+/* 
 const totalCost = articles.reduce((sum, article) => {
   const articleCost = discountEurosConverter.convert(
     article.price,
@@ -24,3 +30,4 @@ const totalCost = articles.reduce((sum, article) => {
 }, 0);
 
 console.log(`Total cost of all articles in EUR with discount: ${totalCost}`);
+ */

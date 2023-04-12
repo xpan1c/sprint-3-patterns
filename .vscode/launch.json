@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/src/patterns1-nivel1/callbackHell.ts",
+            "program": "${workspaceFolder}/src/patterns2-nivel2/app.ts",
             "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [
                 "${workspaceFolder}/**/*.js",

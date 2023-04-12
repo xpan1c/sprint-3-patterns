@@ -48,11 +48,11 @@ npm install
 ```
 luego utiliza los siguientes scripts en la línea de comandos:
 
-- `npm run n1ex1`: Ejecuta el ejercicio Callback Hell
-- `npm run n1ex2`: Ejecuta el ejercicio Singleton
-- `npm run n1ex3`: Ejecuta el ejercicio Observer
-- `npm run n2ex1`: Ejecuta el ejercicio Middleware
-- `npm run n2ex2`: Ejecuta el ejercicio Decorator
+- `npm run e1n1`: Ejecuta el ejercicio Callback Hell
+- `npm run e1n2`: Ejecuta el ejercicio Singleton
+- `npm run e1n3`: Ejecuta el ejercicio Observer
+- `npm run e2n1`: Ejecuta el ejercicio Middleware
+- `npm run e2n2`: Ejecuta el ejercicio Decorator
 
 ## Referencias
 - Singleton:
