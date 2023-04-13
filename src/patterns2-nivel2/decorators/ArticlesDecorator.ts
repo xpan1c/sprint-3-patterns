@@ -3,9 +3,8 @@ import { CurrencyConversion } from "../models/BaseCurrency";
 import CurrencyDecorator from "./CurrencyDecorator";
 
 export class ArticleDecorator extends CurrencyDecorator {
-  private articles: Article[];
 
-  constructor(currencyConversion: CurrencyConversion, articles: Article[]) {
+  constructor(currencyConversion: CurrencyConversion, private articles: Article[]) {
     super(currencyConversion);
     this.articles = articles;
   }

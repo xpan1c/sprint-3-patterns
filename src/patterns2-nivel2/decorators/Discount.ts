@@ -2,11 +2,9 @@ import { CurrencyConversion, ShortCurrency } from "../models/BaseCurrency";
 import CurrencyDecorator from "./CurrencyDecorator";
 
 export class Discount extends CurrencyDecorator {
-  private discountPercentage: number;
-
   constructor(
     currencyConversion: CurrencyConversion,
-    discountPercentage: number
+    private discountPercentage: number
   ) {
     super(currencyConversion);
     this.discountPercentage = discountPercentage;

@@ -6,9 +6,8 @@ import { CurrencyConversion, ShortCurrency } from "../models/BaseCurrency";
  * @constructor @param currencyConversion
  */
 export default abstract class CurrencyDecorator implements CurrencyConversion {
-  protected currencyConversion: CurrencyConversion;
 
-  constructor(currencyConversion: CurrencyConversion) {
+  constructor(protected currencyConversion: CurrencyConversion) {
     this.currencyConversion = currencyConversion;
   }
 
